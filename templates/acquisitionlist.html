@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 2px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Acquisition List for patient ID {{acquisition[0].patient_id}}</h2>
+
+<table>
+  <tr>
+    <th>Acquisition</th>
+    <th>Information</th>
+  </tr>
+    
+    
+  {% for acq in acquisition %}
+    <tr>
+      <td><image src="{{url_for('static',filename = 'images/' + acq.retina_image)}}" ></image></li></td>
+      <td><p>Acquisition ID: {{acq.id}}</p> 
+        <p>Eye: {{acq.eye}}</p>
+        <p>Site: {{acq.site_name}}</p>
+        <p>Operator: {{acq.operator_name}}</p>
+        <p>Date Taken: {{acq.date_taken}}</p>
+      </td>
+    
+    </tr>
+  {% endfor %}
+  
+</table>
+
+</body>
+</html>
+

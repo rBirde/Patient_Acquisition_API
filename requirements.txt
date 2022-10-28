@@ -1,0 +1,12 @@
+Flask-JWT-Extended
+Flask-Smorest
+Flask-SQLAlchemy
+Flask-Reuploaded
+Flask-RESTful
+pybase64
+Pillow
+Werkzeug
+passlib
+marshmallow
+python-dotenv
+gunicorn
