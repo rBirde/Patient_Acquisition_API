@@ -1,6 +1,6 @@
 # POC Patient Acquisition REST API
 The available API in this repository provides a RESTful service with CRUD operations for patients and acquisitions. The design is made to work with a large number of images and database. 
-Using Docker, aws ECR, ECS, and EC2 the API is deployed. The URL mentioned in all the services provided in this API is as follows:
+Using either Insomnia or Postman is recommended. Using Docker, aws ECR, ECS, and EC2 the API is deployed. The URL mentioned in all the services provided in this API is as follows:
 ```
 http://ec2-18-217-184-148.us-east-2.compute.amazonaws.com
 ```
