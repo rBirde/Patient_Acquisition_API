@@ -43,7 +43,9 @@ Acquisitions have the following fields:
 - date_taken (YYYY-MM-DD)
 - operator_name
 - data (which is the retina image being uploaded)
+
 You may use multipart/form-data to upload the acquisitions Images and Information. Use the keys suggested for each field as brought above.
+
 To list all the acquisitions of a patient on file (to show the information of the acquisitions beside their associated images) use the GET handle with the following format:
 ```
 url/acquisition/list3/<string:patient_id>
