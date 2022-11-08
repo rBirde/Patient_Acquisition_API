@@ -10,7 +10,9 @@ To create a patient the following fields should be specified:
 - last_name
 - date_of_birth (YYYY-MM-DD)
 - sex ('male', 'female', 'non_binary', and 'other')
+
 while posting a json with the fields mentioned above, note that an ID will be automatically assigned to the patient as it is set to primary key. The patients also store the acquisition information, but while creating a patient it is not required to specify the acquisitions as they could be added later using the patient ID. 
+
 To create a patient use the POST handle with the following address:
 ```
 url/patient
